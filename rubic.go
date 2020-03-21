@@ -331,4 +331,5 @@ func (rubic *Rubic) DoTurns(notations []string) {
 			reflect.ValueOf(rubic).MethodByName(funcName).Call([]reflect.Value{})
 		}
 	}
+	rubic.Print()
 }
